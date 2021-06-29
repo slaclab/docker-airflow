@@ -8,14 +8,14 @@ metadata:
     nginx.ingress.kubernetes.io/auth-realm: "Authentication Required"
 spec:
   rules:
-  - host: cryoem-daq.slac.stanford.edu
+  - host: cryoem-daq-dev.slac.stanford.edu
     http:
       paths:
       - backend:
           serviceName: www
           servicePort: 8080
         path: /
-  tls:
-  - hosts:
-    - cryoem-daq.slac.stanford.edu
-    secretName: www
+  #tls:
+  #- hosts:
+  #  - cryoem-daq-dev.slac.stanford.edu
+  #  secretName: www
