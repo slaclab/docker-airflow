@@ -12,7 +12,7 @@ spec:
   accessModes:
     - ReadWriteMany
   local:
-    path: /sdf/group/cryoem/dev/daq/airflow/dags
+    path: /lscratch/cryoem-daq--dev/airflow/dags
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -47,7 +47,7 @@ spec:
   accessModes:
     - ReadWriteMany
   local:
-    path: /sdf/group/cryoem/dev/daq/airflow/dags
+    path: /lscratch/cryoem-daq--dev/airflow/dags
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -84,7 +84,7 @@ spec:
   accessModes:
     - ReadWriteMany
   local:
-    path: /sdf/group/cryoem/dev/daq/airflow/plugins
+    path: /lscratch/cryoem-daq--dev/airflow/plugins
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -120,7 +120,7 @@ spec:
   accessModes:
     - ReadWriteMany
   local:
-    path: /sdf/group/cryoem/dev/daq/airflow/plugins
+    path: /lscratch/cryoem-daq--dev/airflow/plugins
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -157,7 +157,7 @@ spec:
   accessModes:
     - ReadWriteMany
   local:
-    path: /sdf/group/cryoem/dev/daq/airflow/logs
+    path: /lscratch/cryoem-daq--dev/airflow/logs
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -194,7 +194,7 @@ spec:
   accessModes:
     - ReadWriteMany
   local:
-    path: /sdf/group/cryoem/dev/daq/airflow/logs
+    path: /lscratch/cryoem-daq--dev/airflow/logs
   nodeAffinity:
     required:
       nodeSelectorTerms:

@@ -1,5 +1,4 @@
 ---
-
 kind: PersistentVolume
 apiVersion: v1
 metadata:
@@ -13,7 +12,7 @@ spec:
   accessModes:
     - ReadWriteOnce
   local:
-    path: /sdf/group/cryoem/dev/daq/redis/
+    path: /lscratch/cryoem-daq--dev/redis/
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -37,7 +36,7 @@ spec:
   accessModes:
     - ReadWriteOnce
   local:
-    path: /sdf/group/cryoem/dev/daq/redis/
+    path: /lscratch/cryoem-daq--dev/sdf/redis/
   nodeAffinity:
     required:
       nodeSelectorTerms:

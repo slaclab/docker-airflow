@@ -12,7 +12,7 @@ spec:
   accessModes:
     - ReadWriteMany
   local:
-    path: /gpfs/slac/cryo/fs1/exp
+    path: /lscratch/cryoem-daq--dev/gpfs/exp
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -49,7 +49,7 @@ spec:
   accessModes:
     - ReadWriteMany
   local:
-    path: /sdf/group/cryoem/dev/
+    path: /lscratch/cryoem-daq--dev/sdf/exp/
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -89,7 +89,7 @@ spec:
   accessModes:
     - ReadWriteMany
   local:
-    path: /srv/cryoem/tem1/
+    path: /lscratch/cryoem-daq--dev/srv/cryoem/tem1/
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -112,7 +112,7 @@ spec:
   accessModes:
     - ReadWriteMany
   local:
-    path: /srv/cryoem/tem1-gainrefs/
+    path: /lscratch/cryoem-daq--dev/srv/cryoem/tem1-gainrefs/
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -163,7 +163,7 @@ spec:
   accessModes:
     - ReadWriteMany
   local:
-    path: /srv/cryoem/tem2/
+    path: /lscratch/cryoem-daq--dev/srv/cryoem/tem2/
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -188,7 +188,7 @@ spec:
   accessModes:
     - ReadWriteMany
   local:
-    path: /srv/cryoem/tem2-gainrefs
+    path: /lscratch/cryoem-daq--dev/srv/cryoem/tem2-gainrefs
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -235,7 +235,7 @@ spec:
   accessModes:
     - ReadWriteMany
   local:
-    path: /srv/cryoem/tem3/
+    path: /lscratch/cryoem-daq--dev/srv/cryoem/tem3/
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -258,7 +258,7 @@ spec:
   accessModes:
     - ReadWriteMany
   local:
-    path: /srv/cryoem/tem3-gainrefs/
+    path: /lscratch/cryoem-daq--dev/srv/cryoem/tem3-gainrefs/
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -307,7 +307,7 @@ spec:
   accessModes:
     - ReadWriteMany
   local:
-    path: /srv/cryoem/tem4/
+    path: /lscratch/cryoem-daq--dev/srv/cryoem/tem4/
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -330,7 +330,7 @@ spec:
   accessModes:
     - ReadWriteMany
   local:
-    path: /srv/cryoem/tem4-gainrefs/
+    path: /lscratch/cryoem-daq--dev/srv/cryoem/tem4-gainrefs/
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -379,7 +379,7 @@ spec:
   accessModes:
     - ReadWriteMany
   local:
-    path: /srv/cryoem/tembeta/
+    path: /lscratch/cryoem-daq--dev/srv/cryoem/tembeta/
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -402,7 +402,7 @@ spec:
   accessModes:
     - ReadWriteMany
   local:
-    path: /srv/cryoem/tembeta-gainrefs/
+    path: /lscratch/cryoem-daq--dev/srv/cryoem/tembeta-gainrefs/
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -453,7 +453,7 @@ spec:
   accessModes:
     - ReadWriteMany
   local:
-    path: /srv/cryoem/temalpha
+    path: /lscratch/cryoem-daq--dev/srv/cryoem/temalpha
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -476,7 +476,7 @@ spec:
   accessModes:
     - ReadWriteMany
   local:
-    path: /srv/cryoem/temalpha-gainrefs/
+    path: /lscratch/cryoem-daq--dev/srv/cryoem/temalpha-gainrefs/
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -528,7 +528,7 @@ spec:
   accessModes:
     - ReadWriteMany
   local:
-    path: /srv/cryoem/fib1
+    path: /lscratch/cryoem-daq--dev/srv/cryoem/fib1
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -565,7 +565,7 @@ spec:
   accessModes:
     - ReadWriteMany
   local:
-    path: /srv/cryoem/temgamma/
+    path: /lscratch/cryoem-daq--dev/srv/cryoem/temgamma/
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -588,7 +588,7 @@ spec:
   accessModes:
     - ReadWriteMany
   local:
-    path: /srv/cryoem/temgamma-gainrefs/
+    path: /lscratch/cryoem-daq--dev/srv/cryoem/temgamma-gainrefs/
   nodeAffinity:
     required:
       nodeSelectorTerms:

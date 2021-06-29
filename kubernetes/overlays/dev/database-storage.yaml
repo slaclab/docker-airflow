@@ -14,15 +14,12 @@ spec:
     - ReadWriteOnce
   #hostPath:
   local:
-    path: /pgdata/cryoem-daq-dev/database/postgres-0
+    path: /lscratch/cryoem-daq--dev/pgdata/cryoem-daq-dev/database/postgres-0
   nodeAffinity:
     required:
       nodeSelectorTerms:
       - matchExpressions:
-        - key: kubernetes.io/hostname
+        - key: storage/sdf
           operator: In
           values:
-          - cryoem-db01
-
-
-#
+          - 'true'
