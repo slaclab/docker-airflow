@@ -7,7 +7,6 @@ TRY_LOOP="5"
 
 REDIS_SERVICE_HOST=${REDIS_SERVICE_HOST:-"redis"}
 REDIS_SERVICE_PORT=${REDIS_SERVICE_PORT:-"6379"}
-REDIS_PASSWORD=$( echo $REDIS_CONFIG | grep requirepass | sed 's|^requirepass \(.*\)\s*|\1|' )
 if [ -n "$REDIS_PASSWORD" ]; then
     REDIS_PREFIX=:${REDIS_PASSWORD}@
 else
