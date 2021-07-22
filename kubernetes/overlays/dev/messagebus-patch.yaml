@@ -27,7 +27,7 @@ spec:
       terminationGracePeriodSeconds: 10
       containers:
       - name: redis-primary
-        image: redis:4.0.14-alpine
+        image: redis:6.0.14
         imagePullPolicy: Always
         ports:
         - containerPort: 6379
@@ -35,16 +35,13 @@ spec:
         volumeMounts:
         - name: redis-data
           mountPath: /data
-        - name: config
-          mountPath: /config
-          readOnly: true
-      volumes:
-      - name: config
-        secret:
-          secretName: redis
-          items:
-          - key: redis-config
-            path: redis.conf
+        args: ["redis-server", "--appendonly", "yes", "--requirepass", "$(REDIS_PASSWORD)"]
+        env:
+        - name: REDIS_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              key: password
+              name: redis
   volumeClaimTemplates:
   - metadata:
       name: redis-data

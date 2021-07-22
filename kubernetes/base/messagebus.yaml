@@ -15,7 +15,6 @@ spec:
   selector:
     role: messagebus
   type: LoadBalancer
-  loadBalancerIP: 172.23.99.159
 
 ---
 apiVersion: apps/v1

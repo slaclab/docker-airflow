@@ -31,7 +31,7 @@ secretGenerator:
   - username=airflow
 - name: redis
   files:
-  - etc/redis-config
+  - password=etc/redis-password
 - name: airflow
   files:
   - etc/fernet-key
@@ -47,5 +47,5 @@ configMapGenerator:
 
 images:
 - name: slaclab/cryoem-airflow
-  newTag: '20200404.0'
+  newTag: '20210721.3'
  

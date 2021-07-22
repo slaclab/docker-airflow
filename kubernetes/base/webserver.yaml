@@ -104,11 +104,11 @@ spec:
               key: database
         - name: REDIS_SERVICE_HOST
           value: redis
-        - name: REDIS_CONFIG
+        - name: REDIS_PASSWORD
           valueFrom:
             secretKeyRef:
               name: redis
-              key: redis-config
+              key: password
         - name: FERNET_KEY
           #value: "46BKJoQYlPPOexq0OhDZnIlNepKFf87WFwLbfzqDDho="
           valueFrom:
